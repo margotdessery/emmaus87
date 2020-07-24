@@ -105,3 +105,7 @@ body>footer .copyrights {
     padding: 1rem;
     border: 1px solid #cfcfcf;
 }
+
+#mapid {
+    height: 180px;
+}
