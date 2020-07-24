@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block body %}
+    <section>
+        <div class="image">
+            <img src="{{ asset('assets/img/') ~ post.image }}" alt="{{ post.title }}" />
+        </div>
+
+        <div class="meta">
+            <small>
+                Créé le {{ post.creationDate | date('d/m/Y') }}
+                dans la catégorie {{ post.category.name }}
+            </small>
+        </div>
+
+        <div class="content">
+            {{ post.content | raw }}
+        </div>
+    </section>
+{% endblock %}

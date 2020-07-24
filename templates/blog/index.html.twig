@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ category.name }}{% endblock %}
+
+{% block body %}
+    {% for post in category.posts %}
+    <section>
+        <h2>
+            <a href="{{ path('blog.post', {'id': post.id}) }}">{{ post.title }}</a>
+        </h2>
+        <div>
+            {{ post.content | raw }}
+        </div>
+    </section>
+    <hr/>
+    {% endfor %}
+{% endblock %}
