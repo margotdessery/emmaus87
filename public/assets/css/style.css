@@ -15,11 +15,11 @@ p:last-child {
 
 a {
     color: #000000;
-    text-decoration: none;
 }
 
 a:hover {
     color: white;
+    text-decoration: none;
 }
 
 img {
